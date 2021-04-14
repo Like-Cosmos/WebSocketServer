@@ -9,6 +9,7 @@ node {
     }
     
     stage('deploy-using-scm'){
-     echo 'deploy';
+     echo 'run';
+        sh 'python3 manage.py'
     }
 }
