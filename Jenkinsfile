@@ -10,6 +10,6 @@ node {
     
     stage('deploy-using-scm'){
      echo 'run';
-        sh 'python3 manage.py'
+        sh 'python3 WebSocketServer/socketTool.py'
     }
 }
