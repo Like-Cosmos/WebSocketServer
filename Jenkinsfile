@@ -2,6 +2,7 @@ node{
     stage('Prepare') {
         echo "1.Fetch branch code to update dependency packages"
         sh "cd WebSocketServer"
+        sh "pip3 install -r requirements.txt"
         sh "git pull"
 
 
