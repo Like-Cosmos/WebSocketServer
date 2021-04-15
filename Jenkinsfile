@@ -1,7 +1,9 @@
 node {
     stage('build-using-scm'){
      echo '加载环境';
-        sh 'pip3 install -r requirements.txt'
+        sh 'ls';
+
+        sh 'pip3 install -r ～/requirements.txt';
     }
     
     stage('test-using-scm'){
@@ -10,6 +12,6 @@ node {
     
     stage('deploy-using-scm'){
      echo 'run';
-        sh 'python3 WebSocketServer/socketTool.py'
+        sh 'python3 ～/WebSocketServer/socketTool.py'
     }
 }
