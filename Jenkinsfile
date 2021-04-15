@@ -1,13 +1,9 @@
 node {
     stage('Prepare') {
-        echo "1.Prepare Stage"
-        checkout scm
-        script {
-            build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
-            if (env.BRANCH_NAME != 'master') {
-                build_tag = "${env.BRANCH_NAME}-${build_tag}"
-            }
-            echo build_tag;
-        }
+        echo '加载环境';
+        sh 'cd /home/job'
+        sh 'git@github.com:Like-Cosmos/WebSocketServer.git';
+        sh 'pip3 install -r WebSocketServer/requirements.txt';
+
     }
 }
