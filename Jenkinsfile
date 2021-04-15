@@ -1,9 +1,24 @@
-node {
-    stage('Prepare') {
+#!groovy
 
-        echo '加载环境';
-        def output = sh returnStdout: true, script: 'ls -l'
-        echo '${output}'
+String workspace = "/home/dension/job"
 
+pipeline{
+    agent {
+        node{
+            label "master"
+            customWorkspace "${workspace}"
+        }
+    }
+    options {
+        timestamps()
+        timeout(time: 1, unit: 'HOURS')
+    }
+    stages {
+        stage('拉代码'){
+            steps{
+                echo '拉代码'
+                sh 'git clone git@github.com:Like-Cosmos/WebSocketServer.git';
+            }
+        }
     }
 }
