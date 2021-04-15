@@ -2,8 +2,7 @@ node {
     stage('build-using-scm'){
      echo '加载环境';
         sh 'ls';
-
-        sh 'pip3 install -r ～/requirements.txt';
+        sh 'pip3 install -r requirements.txt';
     }
     
     stage('test-using-scm'){
