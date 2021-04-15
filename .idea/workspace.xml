@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f24e18b-9239-471a-a06f-9afdaaaad8fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Test_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WebSocketServer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
@@ -26,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../WebSocketServer" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1r9c5RAMdiCCxXGWL7L3k5WILMM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -236,6 +235,7 @@
       <workItem from="1618449878015" duration="1406000" />
       <workItem from="1618451703116" duration="737000" />
       <workItem from="1618454031122" duration="1753000" />
+      <workItem from="1618478561325" duration="66000" />
     </task>
     <servers />
   </component>
